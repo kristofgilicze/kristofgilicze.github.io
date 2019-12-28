@@ -1,151 +1,105 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
-  font-family: 'Open Sans', serif;
-  padding-top: 54px;
-  color: #868e96;
-}
-
-@media (min-width: 992px) {
-  body {
-    padding-top: 0;
-    padding-left: 17rem;
-  }
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: 'Saira Extra Condensed', serif;
-  font-weight: 700;
-  text-transform: uppercase;
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color: white;
   color: black;
 }
 
-h1 {
-  font-size: 6rem;
-  line-height: 5.5rem;
+/* Style the header */
+header {
+  padding-left: 3.0rem;
+  padding-top: 2.0rem;
+  padding-bottom: 2.0rem;
+  text-align: left;
+  font-size: 1.2em;
 }
 
-h2 {
-  font-size: 3.5rem;
+small {
+  color: darkgray;
 }
 
-.subheading {
-  text-transform: uppercase;
-  font-weight: 500;
-  font-family: 'Saira Extra Condensed', serif;
-  font-size: 1.35rem;
+/* Container for flexboxes */
+section {
+  display: -webkit-flex;
+  display: flex;
 }
 
-.list-social-icons a {
-  color: #495057;
+/* Style the navigation menu */
+nav {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding: 0.6rem;
 }
 
-.list-social-icons a:hover {
-  color: #40539F;
+/* Style the list inside the menu */
+nav li > a {
+  display: inline;
+  /* text-decoration: none; */
+  /* text-transform: uppercase; */
+  padding: 0.3rem;
+  color: black;
 }
 
-.list-social-icons a .fa-lg {
-  font-size: 1.75rem;
+nav li > a:hover {
+  color: white;
+  background-color: black;
 }
 
-.list-icons {
-  font-size: 3rem;
+
+:target {
+  display: block !important;
+  opacity: 1;
+  animation-name: fadeInOpacity;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 0.5s;
 }
 
-.list-icons .list-inline-item i:hover {
-  color: #40539F;
+@keyframes fadeInOpacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
-#sideNav .navbar-nav .nav-item .nav-link {
-  font-weight: 600;
-  text-transform: uppercase;
+.resume-section {
+  display: none;
 }
 
-@media (min-width: 992px) {
-  #sideNav {
-    text-align: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: flex;
+nav ul {
+  list-style-type: none;
+}
+
+nav li {
+  text-align: right;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+}
+
+/* Style the content */
+article {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  padding: 10px;
+}
+
+/* Style the footer */
+footer {
+  padding-top: 2.5rem;
+  text-align: center;
+}
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
     flex-direction: column;
-    width: 17rem;
-    height: 100vh;
   }
-  #sideNav .navbar-brand {
-    display: flex;
-    margin: auto auto 0;
-    padding: 0.5rem;
-  }
-  #sideNav .navbar-brand .img-profile {
-    max-width: 10rem;
-    max-height: 10rem;
-    border: 0.5rem solid rgba(255, 255, 255, 0.2);
-  }
-  #sideNav .navbar-collapse {
-    display: flex;
-    align-items: flex-start;
-    flex-grow: 0;
-    width: 100%;
-    margin-bottom: auto;
-  }
-  #sideNav .navbar-collapse .navbar-nav {
-    flex-direction: column;
-    width: 100%;
-  }
-  #sideNav .navbar-collapse .navbar-nav .nav-item {
-    display: block;
-  }
-  #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
-    display: block;
-  }
-}
-
-section.resume-section {
-  border-bottom: 1px solid #dee2e6;
-  padding-top: 5rem !important;
-  padding-bottom: 5rem !important;
-}
-
-section.resume-section .resume-item .resume-date {
-  min-width: none;
-}
-
-@media (min-width: 768px) {
-  section.resume-section {
-    min-height: 100vh;
-  }
-  section.resume-section .resume-item .resume-date {
-    min-width: 18rem;
-  }
-}
-
-@media (min-width: 992px) {
-  section.resume-section {
-    padding-top: 3rem !important;
-    padding-bottom: 3rem !important;
-  }
-}
-
-.bg-primary {
-  background-color: #40539F !important;
-}
-
-.text-primary {
-  color: #40539F !important;
-}
-
-a {
-  color: #40539F;
-}
-
-a:hover, a:focus, a:active {
-  color: #824027;
-}
-
-.bgimg {
-  background-image: url('../img/8.png');
 }
