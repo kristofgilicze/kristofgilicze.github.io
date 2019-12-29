@@ -115,6 +115,10 @@ footer {
   color: black;
 }
 
+.dev-icons {
+  font-size: 2.5em;
+}
+
 a {
   color: darkblue;
 }
@@ -132,6 +136,9 @@ a:hover {
   section {
     -webkit-flex-direction: column;
     flex-direction: column;
+  }
+  nav li {
+    display: inline-block;
   }
 }
 
@@ -171,4 +178,8 @@ a:hover {
 
 .font-weight-bold {
   font-weight: bold;
+}
+
+.mb-0 {
+  margin-bottom: 0;
 }
