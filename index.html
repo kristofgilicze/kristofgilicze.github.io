@@ -13,6 +13,7 @@
     <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
 
     <link href="css/resume.css" rel="stylesheet">
+    <script src="js/resume.js"></script>
 </head>
 <body>
 
@@ -21,7 +22,7 @@
     <h2>Kristóf Gilicze <small>software engineer</small></h2>
 </header>
 
-<section>
+<section class="container">
     <nav>
         <ul>
         <li><a href="#about">about</a></li>
@@ -35,58 +36,30 @@
 
     <article>
 
-        <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
-            <div class="my-auto">
-                <h1 class="mb-0">Kristof Gilicze
-                </h1>
-                <div class="subheading mb-5">Software engineer ·
-                    <a href="mailto:giliczekristof@gmail.com">giliczekristof@gmail.com</a>
+        <section id="about">
+            <div class="flex">
+                <div class="flex-1">
+                    <h2>About</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sit amet ipsum mauris.
+                        In sagittis gravida consequat.
+                        Curabitur augue quam, facilisis at vehicula non, dictum vestibulum enim.
+                        Nunc nec tellus sed purus scelerisque ultricies eu eget ipsum.
+                        Aenean ac arcu sed enim tempus dictum in id erat. Fusce convallis id diam eu lobortis.
+                        Praesent accumsan ligula eu nulla convallis, at fermentum erat mollis. In auctor dolor et nunc finibus aliquet.
+                        Nullam purus nisl, ultrices non sem non, tincidunt venenatis nisi.
+                    </p>
                 </div>
-
-                <!-- About intro -->
-                <p class="mb-5">
-
-                    .............................................
-                    ............................................
-
-                </p>
-
-                <ul class="list-inline list-social-icons mb-0">
-                    <li class="list-inline-item">
-                        <a href="https://stackoverflow.com/users/10434783/kristof-gilicze" target="_blank">
-                <span class="fa-stack fa-lg">
-                  <i class="fa fa-circle fa-stack-2x"></i>
-                  <i class="fa fa-stack-overflow fa-stack-1x fa-inverse"></i>
-                </span>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a href="https://www.linkedin.com/in/krist%C3%B3f-gilicze-427228153/" target="_blank">
-                <span class="fa-stack fa-lg">
-                  <i class="fa fa-circle fa-stack-2x"></i>
-                  <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
-                </span>
-                        </a>
-                    </li>
-                    <!--
-                    <li class="list-inline-item">
-                      <a href="">
-                        <span class="fa-stack fa-lg">
-                          <i class="fa fa-circle fa-stack-2x"></i>
-                          <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-                        </span>
-                      </a>
-                    </li>
-                    -->
-                </ul>
+                <div>
+                    <img src="resources/profile.jpg" class="avatar">
+                </div>
             </div>
         </section>
 
-        <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="experience">
-            <div class="my-auto">
-                <h2 class="mb-5">Experience</h2>
-
-                <div class="resume-item d-flex flex-column flex-md-row mb-5">
+        <section id="experience">
+            <div>
+                <h2>Experience</h2>
+                <div>
                     <div class="resume-content mr-auto">
                         <h3 class="mb-0">IoT Solution developer</h3>
                         <div class="subheading mb-3">contract work, both hardware and software</div>
@@ -118,13 +91,13 @@
 
                 <div class="resume-item d-flex flex-column flex-md-row mb-5">
                     <div class="resume-content mr-auto">
-                        <img src="./index_files/bme_logo_kicsi.jpg" alt="bmelogo" height="120px">
+                        <img src="resources/bme_logo_kicsi.jpg" alt="bmelogo" height="120px">
                         <h3 class="mb-0">UNIVERSITY OF TECHNOLOGY AND ECONOMICS - Budapest</h3>
                         <div class="subheading mb-3">Faculty of Electrical Engineering and Informatics</div>
                         <div>Informatics engineering</div>
                     </div>
                     <div class="resume-content mr-auto">
-                        <img src="./index_files/cimer.svg" alt="bmelogo" height="120px">
+                        <img src="resources/cimer.svg" alt="bmelogo" height="120px">
                         <h3 class="mb-0">UNIVERSITY OF PANNONIA - Veszprem Hungary</h3>
                         <div class="subheading mb-3">Faculty of Electrical Engineering and Informatics</div>
                         <div>Informatics engineering</div>
@@ -201,13 +174,14 @@
             </div>
         </section>
 
-        <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="awards">
-            <div class="my-auto">
+        <section id="awards">
+            <div>
                 <h2 class="mb-5">Awards &amp; Certifications</h2>
-                <ul class="fa-ul mb-0">
+                <ul class="fa-ul mb-0 yellow">
                     <li>
                         <i class="fa-li fa fa-trophy text-warning"></i>
-                        1<sup>st</sup> Place - University of Szeged - SZTIIV 2017 Water Rocket 3d real-time data logging system</li>
+                        1<sup>st</sup> Place - University of Szeged - SZTIIV 2017 Water Rocket 3d real-time data logging system
+                    </li>
                 </ul>
             </div>
         </section>
@@ -215,7 +189,39 @@
 </section>
 
 <footer>
-    <p>Copyright © 2019</p>
+    <ul class="list-inline icons">
+        <li>
+            <a href="https://stackoverflow.com/users/10434783/kristof-gilicze" target="_blank">
+                <span class="fa-stack">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-stack-overflow fa-stack-1x fa-inverse"></i>
+                </span>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.linkedin.com/in/krist%C3%B3f-gilicze-427228153/" target="_blank">
+                <span class="fa-stack">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                </span>
+            </a>
+        </li>
+        <li>
+            <a href="mailto:giliczekristof@gmail.com" target="_blank">
+                <span class="fa-stack">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                </span>
+            </a>
+        </li>
+    </ul>
+    <a href="" class="font-weight-bold"><i class="fa fa-file-pdf-o"></i> download my CV in .PDF format</a>
+    <p>
+        Copyright ©
+        <script type="text/javascript">
+            document.write(new Date().getFullYear());
+        </script>
+    </p>
 </footer>
 
 </body>

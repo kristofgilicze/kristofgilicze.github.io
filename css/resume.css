@@ -17,6 +17,13 @@ header {
   font-size: 1.2em;
 }
 
+.avatar {
+  vertical-align: middle;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
 small {
   color: darkgray;
 }
@@ -68,7 +75,7 @@ nav li > a:hover {
   }
 }
 
-.resume-section {
+article > section {
   display: none;
 }
 
@@ -96,10 +103,72 @@ footer {
   text-align: center;
 }
 
+.list-inline ul {
+  list-style-type: none;
+}
+
+.list-inline li {
+  display: inline-block;
+}
+
+.icons a {
+  color: black;
+}
+
+a {
+  color: darkblue;
+}
+
+a:hover {
+  color: darkblue;
+}
+
+.yellow i {
+  color: gold;
+}
+
 /* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
 @media (max-width: 600px) {
   section {
     -webkit-flex-direction: column;
     flex-direction: column;
   }
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-1 {
+  flex-grow: 1;
+}
+
+.flex-3 {
+  flex-grow: 3;
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+.font-weight-bold {
+  font-weight: bold;
 }
