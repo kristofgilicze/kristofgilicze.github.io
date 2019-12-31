@@ -6,6 +6,10 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
   background-color: white;
   color: black;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  text-shadow: rgba(0,0,0,.01) 0 0 1px;
 }
 
 /* Style the header */
@@ -182,4 +186,13 @@ a:hover {
 
 .mb-0 {
   margin-bottom: 0;
+}
+
+.tag {
+  color: white;
+  background-color: black;
+  padding: 0.3rem;
+  font-size: 0.8em;
+  font-weight: bold;
+  border-radius: 0.5rem;
 }
