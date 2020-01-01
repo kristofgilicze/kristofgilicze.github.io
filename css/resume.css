@@ -60,6 +60,11 @@ nav li > a:hover {
   background-color: black;
 }
 
+nav li .active {
+  color: white;
+  background-color: black;
+}
+
 
 :target {
   display: block !important;
@@ -194,5 +199,5 @@ a:hover {
   padding: 0.3rem;
   font-size: 0.8em;
   font-weight: bold;
-  border-radius: 0.5rem;
+  border-radius: 0em;
 }
