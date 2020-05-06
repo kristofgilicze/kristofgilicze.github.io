@@ -10,9 +10,6 @@
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
     text-shadow: rgba(0,0,0,.01) 0 0 1px;
-  
-  
-  
   }
   
   
@@ -30,6 +27,7 @@
     padding-bottom: 2.0rem;
     text-align: left;
     font-size: 1.2em;
+    text-transform: uppercase;
   }
   
   
@@ -75,11 +73,12 @@
     /* text-transform: uppercase; */
     padding: 0.3rem;
     color: black;
+    font-weight: bold;
   }
   
   nav li > a:hover {
     color: white;
-    background-color: black;
+    background-color: darkblue;
   }
   
   nav li .active {
@@ -125,7 +124,7 @@
   footer {
 
     text-align: center;
-    padding-bottom: 8rem;
+    padding-bottom: 2rem;
     text-align: center;
 
     ul {
@@ -178,9 +177,6 @@
       -webkit-flex-direction: column;
       flex-direction: column;
     }
-    nav li {
-      display: inline-block;
-    }
   }
   
   .flex {
@@ -206,6 +202,8 @@
   .container {
     padding-right: 1rem;
     padding-left: 1rem;
+    margin-top: 0;
+    margin-bottom: 0;
     margin-right: auto;
     margin-left: auto;
   }
@@ -247,7 +245,19 @@
     flex-direction: row;
     flex: 1;
   }
-  
+
+  @media (max-width: 768px) {
+    nav li {
+      display: inline-block;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .content {
+      flex-direction: column;
+    }
+  }
+
   .intro-text {
       width: 15rem;
   }
