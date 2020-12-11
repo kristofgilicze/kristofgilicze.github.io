@@ -4,7 +4,7 @@
 
             <div>
                 <div>
-                    <h3>Software developer <small>
+                    <h3>{{ $t('views.experince.Software developer') }} <small>
                         at <a href="https://sagaxcommunications.com/" target="_blank"> Sagax Communications Ltd.</a>
                     </small></h3>
                     <div>
@@ -17,9 +17,9 @@
                     <p>
                         At Sagax I was developing and maintaining a telecommunication measurement system which features
                         <ul>
-                            <li>measure controller</li>
-                            <li>data acquisition</li>
-                            <li>analyzation system</li>
+                            <li>{{ $t('views.experince.measure controller') }}</li>
+                            <li>{{ $t('views.experince.data acquisition') }}</li>
+                            <li>{{ $t('views.experince.analyzation system') }}</li>
                         </ul>
 
                         Software was implemented using the Flask framework, with VueJS Single Page Application as a frontend interface.

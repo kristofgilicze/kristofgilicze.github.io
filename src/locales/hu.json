@@ -1,8 +1,20 @@
 {
     "fullName": "Gilicze Kristóf",
     "title": "szoftver fejlesztő mérnök",
+    "description": "Modern web applikációk fejlesztéshez szükséges technológiák átfogó ismerete. Mindig nyitott vagyok új technologiák megismerésére.",
     "message": "hello i18n !!",
     "hello": "helló!",
     "languages": "programnyelvek",
-    "tools": "eszközkészlet"
+    "tools": "eszközkészlet",
+    "Copyright": "Minden jog fenntartva",
+    "download my CV": "töltsd le a CV-m",
+
+    "views": {
+        "experince": {
+            "Software developer": "Szoftverfejlesztő",
+            "measure controller": "mérésvezérlő",
+            "data acquisition": "adatgyűjtő",
+            "analyzation system": "analizáló felületost sound"
+        }        
+    }
 }

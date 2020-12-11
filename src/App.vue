@@ -6,7 +6,14 @@
         <navigation />
 
         <main>
-          <section><router-view /></section>
+          <section>
+            <transition
+              name="fade"
+              mode="out-in"
+            >
+              <router-view />
+            </transition>
+          </section>
         </main>
       </div>
 
@@ -44,9 +51,9 @@
           </li>
         </ul>
         <a href="./resources/cv.pdf" download class="font-weight-bold">
-          <i class="fa fa-file-pdf-o"></i> download my CV
+          <i class="fa fa-file-pdf-o"></i> {{ $t('download my CV') }}
         </a>
-        <p>Copyright © {{ cp }}</p>
+        <p>{{ $t('Copyright') }} © {{ cp }}</p>
       </footer>
     </div>
   </div>
@@ -69,6 +76,22 @@ export default Vue.extend({
 </script>
 
 <style lang="scss">
+
+.fade-enter-active,
+.fade-leave-active {
+  transition-duration: 0.3s;
+  transition-property: opacity;
+  transition-timing-function: ease;
+}
+
+.fade-enter,
+.fade-leave-active {
+  opacity: 0
+}
+
+
+
+
 @import url("assets/vendor/font-awesome/css/font-awesome.min.css");
 @import url("assets/vendor/ndevicons/devicon.min.css");
 @import url("assets/vendor/simple-line-icons/css/simple-line-icons.css");

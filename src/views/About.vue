@@ -1,6 +1,6 @@
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
+    <h1>{{ $t('description') }}</h1>
     <hr>
     <github-calendar username="kristofgilicze"><!--GitHubCalendar--></github-calendar>
   </div>
