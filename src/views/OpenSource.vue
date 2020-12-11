@@ -1,8 +1,6 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
-    <hr>
-    <github-calendar username="kristofgilicze"><!--GitHubCalendar--></github-calendar>
+  <div>
+    <h1>WIP</h1>
   </div>
 </template>
 
