@@ -1,0 +1,98 @@
+{
+    "languages": [
+        {
+            "name": "Python",
+            "icon": "python.svg",
+            "url": "https://www.python.org"
+        },
+        {
+            "name": "C / C++",
+            "icon": "c-and-cpp.svg",
+            "url": "https://isocpp.org/"
+        },
+        {
+            "name": "TypeScript",
+            "icon": "typescript.svg",
+            "url": "https://www.typescriptlang.org"
+        },
+        {
+            "name": "JavaScript",
+            "icon": "javascript.svg",
+            "url": "https://developer.mozilla.org/en-US/docs/Learn/JavaScript"
+        }
+    ],
+    "libsAndFrameworks": [
+        {
+            "name": "Django",
+            "icon": "django.svg",
+            "url": "https://www.djangoproject.com"
+        },
+        {
+            "name": "Starlette",
+            "icon": "typescript.svg",
+            "url": "https://www.typescriptlang.org"
+        },
+        {
+            "name": "Flask",
+            "icon": "flask.svg",
+            "url": "https://isocpp.org/"
+        },
+        {
+            "name": "Symfony",
+            "icon": "symfony.svg",
+            "url": "https://developer.mozilla.org/en-US/docs/Learn/JavaScript"
+        }
+    ],
+    "frontend": [
+        {
+            "name": "Vue.js",
+            "icon": "vue.svg",
+            "url": "https://www.djangoproject.com"
+        },
+        {
+            "name": "LitElement",
+            "icon": "polymer.svg",
+            "url": "https://www.djangoproject.com"
+        },
+        {
+            "name": "Polymer",
+            "icon": "polymer.svg",
+            "url": "https://www.djangoproject.com"
+        }
+    ],
+    "persistance": [
+        {
+            "name": "MySQL",
+            "icon": "mysql.svg"
+        },
+        {
+            "name": "PostgreSQL",
+            "icon": "postgres.svg",
+            "url": "https://www.postgresql.org"
+        }
+    ],
+    "transferProtocols": [
+        {
+            "name": "GraphQL",
+            "icon": "graphql.svg",
+            "url": "https://graphql.org"
+        },
+        {
+            "name": "Socket.IO",
+            "icon": "socketio.svg",
+            "url": "https://socket.io"
+        },
+        {
+            "name": "REST",
+            "icon": "rest.svg",
+            "url": "https://restfulapi.net"
+        }
+    ],
+    "skills": [
+        {
+            "name": "Git",
+            "icon": "git.svg",
+            "url": "https://git-scm.com"
+        }
+    ]
+}

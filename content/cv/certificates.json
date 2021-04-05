@@ -1,0 +1,50 @@
+{
+    "microsoft": [
+        {
+            "code": "98-364",
+            "name": "Database Fundamentals",
+            "obtained_at": null,
+            "link": null
+        },
+        {
+            "code": "98-361",
+            "name": "Software Development Fundamentals",
+            "obtained_at": null,
+            "link": null
+        },
+        {
+            "code": "AZ-903",
+            "name": "Azure Fundamentals",
+            "obtained_at": null,
+            "link": null
+        }
+    ],
+    "google": [
+        {
+            "code": "98-364",
+            "name": "Database Fundamentals",
+            "obtained_at": null,
+            "link": null
+        },
+        {
+            "code": "98-361",
+            "name": "Software Development Fundamentals",
+            "obtained_at": null,
+            "link": null
+        }
+    ],
+    "other": [
+        {
+            "code": "B",
+            "name": "Drivers license",
+            "obtained_at": null,
+            "link": null
+        },
+        {
+            "code": "C1",
+            "name": "English",
+            "obtained_at": null,
+            "link": null
+        }
+    ]
+}

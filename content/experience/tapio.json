@@ -1,0 +1,30 @@
+{
+    "order": 1,
+    "company": "independent contract",
+    "company_website": null,
+    "role": "IoT-solution developer",
+    "tags": [
+        {
+            "label": "Python",
+            "link": null
+        },
+        {
+            "label": "Flask",
+            "link": null
+        },
+        {
+            "label": "PyModbus",
+            "link": null
+        },
+        {
+            "label": "JavaScript",
+            "link": null
+        }
+    ],
+    "contract": {
+        "type": "Project",
+        "live": false
+    },
+    "duration": "May 2019",
+    "description": "Built a complete solution based on a 25 node RS485 sensor array to watch, control, alert, log the data from a meat processing facility."
+}
