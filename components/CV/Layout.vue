@@ -13,7 +13,7 @@
 import HeaderRow from './HeaderRow.vue';
 import ContactsRow from './ContactsRow.vue';
 import LeftCol from './LeftCol.vue';
-import RightCol from './RightCol.vue';
+import RightCol from './RightCol/index.vue';
 export default {
   name: 'CvContent',
   components: { HeaderRow, ContactsRow, LeftCol, RightCol },

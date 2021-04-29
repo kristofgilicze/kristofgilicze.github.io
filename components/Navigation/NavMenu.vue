@@ -13,11 +13,12 @@
     -->
     <li>
       <nuxt-link
-        to="/#experience"
+        to="/"
         class="item px-4 py-2 text-center block w-full transition transform hover:scale-110 hover:text-blue-500 dark:hover:text-cyan-400 focus:text-blue-500 dark:focus:text-cyan-400"
-        >Experience</nuxt-link
+        >Hello!</nuxt-link
       >
     </li>
+    <!--
     <li>
       <nuxt-link
         to="/#toolbelt"
@@ -25,18 +26,19 @@
         >Toolbelt</nuxt-link
       >
     </li>
+    -->
     <li>
       <nuxt-link
-        to="/#projects"
+        to="/projects"
         class="item px-4 py-2 text-center block w-full transition transform hover:scale-110 hover:text-blue-500 dark:hover:text-cyan-400 focus:text-blue-500 dark:focus:text-cyan-400"
         >Projects</nuxt-link
       >
     </li>
     <li>
       <nuxt-link
-        to="/#contact"
+        to="/get-in-touch"
         class="item px-4 py-2 text-center block w-full transition transform hover:scale-110 hover:text-blue-500 dark:hover:text-cyan-400 focus:text-blue-500 dark:focus:text-cyan-400"
-        >Contact</nuxt-link
+        >Get in touch</nuxt-link
       >
     </li>
     <li>
@@ -70,6 +72,7 @@ export default {
   color: transparent;
 }
 
+.nuxt-link-exact-active::before,
 .item:hover::before,
 .item:focus::before {
   content: '{';
@@ -77,6 +80,7 @@ export default {
   font-weight: bold;
 }
 
+.nuxt-link-exact-active::after,
 .item:hover::after,
 .item:focus::after {
   content: '}';

@@ -26,7 +26,7 @@
       class="flex-auto text-center text-sm flex items-center gap-1"
     >
       <globe class="text-cyan-900 h-6 w-6" />
-      <span class="font-semibold">www.kristofg.dev</span>
+      <span class="font-semibold">{{ about.website }}</span>
     </a>
   </section>
 </template>

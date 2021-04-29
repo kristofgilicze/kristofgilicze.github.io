@@ -11,7 +11,7 @@ tags:
 contract:
     type: "Project"
     live: false
-duration: "2009 - 2017"
+duration: 2 seasons ( 2016, 2017 )
 ---
 The RoboCup rescue-maze challange is to identify victims within a re-created disaster area with obstacles, uneven terrain.
 

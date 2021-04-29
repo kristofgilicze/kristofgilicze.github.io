@@ -1,6 +1,6 @@
 <template>
   <section id="projects">
-    <div class="container mx-auto px-8 py-4 md:px-20 md:py-10 max-w-6xl">
+    <div class="container mx-auto px-8 py-4 md:px-20 md:py-40 max-w-6xl">
       <h1
         class="mb-5 md:mb-10 text-3xl md:text-4xl font-bold text-center whitespace-nowrap"
       >
@@ -125,11 +125,11 @@
 
 <script>
 import { mapActions } from 'vuex';
-import ExternalLink from '../Icons/ExternalLink.vue';
-import GitHub from '../Icons/GitHub.vue';
+import ExternalLink from '../components/Icons/ExternalLink.vue';
+import GitHub from '../components/Icons/GitHub.vue';
 
 export default {
-  name: 'Project',
+  name: 'Projects',
   components: { GitHub, ExternalLink },
   data() {
     return {

@@ -18,41 +18,39 @@
       <li class="mx-auto mb-8">
         <theme-toggle />
       </li>
-      <!--
       <li>
         <nuxt-link
-          to="/#about"
+          to="/"
           class="mb-8 px-4 py-2 text-center block w-full transition hover:text-blue-500 dark:hover:text-cyan-400 focus:text-blue-500 dark:focus:text-cyan-400"
-          >About</nuxt-link
+          >Hello!</nuxt-link
         >
       </li>
-      -->
       <li>
         <nuxt-link
-          to="/#experience"
+          to="/experience"
           class="mb-8 px-4 py-2 text-center block w-full transition hover:text-blue-500 dark:hover:text-cyan-400 focus:text-blue-500 dark:focus:text-cyan-400"
           >Experience</nuxt-link
         >
       </li>
       <li>
         <nuxt-link
-          to="/#skills"
+          to="/skills"
           class="mb-8 px-4 py-2 text-center block w-full transition hover:text-blue-500 dark:hover:text-cyan-400 focus:text-blue-500 dark:focus:text-cyan-400"
           >Skills</nuxt-link
         >
       </li>
       <li>
         <nuxt-link
-          to="/#projects"
+          to="/projects"
           class="mb-8 px-4 py-2 text-center block w-full transition hover:text-blue-500 dark:hover:text-cyan-400 focus:text-blue-500 dark:focus:text-cyan-400"
           >Projects</nuxt-link
         >
       </li>
       <li>
         <nuxt-link
-          to="/#contact"
+          to="/get-in-touch"
           class="mb-8 px-4 py-2 text-center block w-full transition hover:text-blue-500 dark:hover:text-cyan-400 focus:text-blue-500 dark:focus:text-cyan-400"
-          >Contact</nuxt-link
+          >Get in touch</nuxt-link
         >
       </li>
     </ul>

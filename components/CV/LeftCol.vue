@@ -32,12 +32,8 @@
           ></span>
         </div>
         <div class="m-2 pb-5">
-          <span
-            v-for="(tag, i) in project.tags"
-            :key="i"
-            class="text-sm bg-gray-200 rounded px-1 mx-2 font-sourcesans text-cyan-900"
-            >{{ tag.label }}</span
-          >
+          <p class="text-sm font-light mb-2">{{ project.duration }}</p>
+          <tags :items="project.tags" />
           <p class="text-sm"><nuxt-content :document="project" /></p>
           <p>{{ project.description }}</p>
         </div>
@@ -47,9 +43,11 @@
 </template>
 
 <script>
+import Tags from './Tags.vue';
+
 export default {
   name: 'LeftCol',
-  components: {},
+  components: { Tags },
   data() {
     return {
       projects: null,

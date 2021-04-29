@@ -267,3 +267,12 @@ skew to change the 'thickness' of the glitch.*/
     transform: skew(1deg);
   }
 }
+
+.page-enter-active,
+.page-leave-active {
+  transition: opacity 0.3s;
+}
+.page-enter,
+.page-leave-to {
+  opacity: 0;
+}

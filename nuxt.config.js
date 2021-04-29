@@ -1,6 +1,5 @@
 export default {
   target: 'static',
-
   head: {
     title: 'Kristof Gilicze',
     meta: [

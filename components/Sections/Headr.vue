@@ -1,7 +1,7 @@
 <template>
   <header>
     <div
-      class="container mx-auto px-8 py-4 md:px-12 md:py-10 flex items-center min-h-screen max-w-6xl"
+      class="container mx-auto px-8 py-4 md:px-12 md:py-10 flex items-center header-h max-w-6xl"
     >
       <main v-if="about">
         <p class="mb-4 font-sourcecode text-blue-500 dark:text-cyan-400">
@@ -26,7 +26,7 @@
         />
         <div class="mt-8 flex items-center">
           <nuxt-link
-            to="/#contact"
+            to="/get-in-touch"
             class="px-6 py-3 font-sourcecode text-blue-500 dark:text-cyan-400 inline-block border-2 border-blue-500 dark:border-cyan-400 rounded-md transition hover:bg-blue-500 dark:hover:bg-cyan-400 hover:bg-opacity-20 dark:hover:bg-opacity-20 focus:bg-blue-500 dark:focus:bg-cyan-400 focus:bg-opacity-20 dark:focus:bg-opacity-20"
           >
             Get In Touch
@@ -74,5 +74,9 @@ export default {
   100% {
     opacity: 0;
   }
+}
+
+.header-h {
+  min-height: 95vh;
 }
 </style>

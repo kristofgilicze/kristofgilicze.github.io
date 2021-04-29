@@ -2,7 +2,7 @@
 order: 0
 company: Sagax communications Ltd.
 company_website: https://sagaxcommunications.com
-role: software developer
+role: junior software developer
 tags: 
     - label: Python
       link: null
@@ -28,4 +28,6 @@ tasks:
     - I was an Active Mentor of the Google Africa Developer Scholarship (GADS) program in Nairobi.
     - I helped run Meetups and mentor in the Android Track.
 ---
-FMeter is a automated _ITU_ monitoring system implemented using the Flask framework, with VueJS Single Page Application as a frontend interface.
+FMeter is a automated quality control monitoring system certified by the _<strong>I</strong>nternational <strong>T</strong>elecommunication <strong>U</strong>nion_.
+
+Implemented using the Flask framework, with VueJS Single Page Application as a frontend interface.
