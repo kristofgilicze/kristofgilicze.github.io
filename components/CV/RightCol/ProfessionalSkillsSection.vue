@@ -1,7 +1,7 @@
 <template>
   <section>
     <h2 class="text-xl pb-3">Professional skillset</h2>
-    <div v-if="toolbelt" class="grid grid-cols-1 gap-5 pb-10">
+    <div v-if="toolbelt" class="grid grid-cols-1 gap-5 pb-4">
       <div v-for="(col, i) in cols" :key="(i + 1) * Math.random()">
         <p class="text-sm font-semibold text-green-600"># {{ col.label }}</p>
         <ul
