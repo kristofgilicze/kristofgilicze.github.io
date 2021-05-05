@@ -100,11 +100,20 @@ export default {
   },
   */
 
+  netlify: {
+    mergeSecurityHeaders: true
+  },
+
   css: ['@/assets/css/style.css'],
 
   components: true,
 
-  buildModules: ['@nuxtjs/composition-api', '@nuxtjs/eslint-module', '@nuxtjs/tailwindcss'],
+  buildModules: [
+    '@nuxtjs/composition-api',
+    '@nuxtjs/eslint-module',
+    '@nuxtjs/tailwindcss',
+    '@aceforth/nuxt-netlify'
+  ],
 
   modules: ['@nuxtjs/pwa', '@nuxt/content', '@nuxtjs/google-analytics'],
 
