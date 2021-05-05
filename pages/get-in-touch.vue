@@ -29,30 +29,15 @@
           @submit.prevent="submitForm"
         >
           <input type="hidden" name="form-name" value="contact" />
-          <div class="mb-4">
-            <label for="name" class="block">Name</label>
-            <input
-              id="name"
-              v-model="form.name"
-              name="name"
-              type="text"
-              required
-              placeholder=""
-              class="p-2 block w-full border-b dark:bg-gray-800 border-gray-300 dark:border-gray-700 transition focus:border-blue-500 dark:focus:border-cyan-400 outline-none"
-            />
-          </div>
-          <div class="mb-4">
-            <label for="subject" class="block">Subject</label>
-            <input
-              id="subject"
-              v-model="form.subject"
-              name="subject"
-              type="text"
-              required
-              placeholder=""
-              class="p-2 block w-full border-b dark:bg-gray-800 border-gray-300 dark:border-gray-700 transition focus:border-blue-500 dark:focus:border-cyan-400 outline-none"
-            />
-          </div>
+          <input
+            id="subject"
+            value="kristofg.dev - contact form"
+            name="subject"
+            type="text"
+            required
+            placeholder=""
+            class="hidden"
+          />
           <div class="mb-4">
             <label for="email" class="block">Email</label>
             <input
@@ -80,8 +65,8 @@
             class="mx-auto mt-6 px-6 py-3 block font-sourcecode text-blue-500 dark:text-cyan-400 border-2 border-blue-500 dark:border-cyan-400 rounded-md transition hover:bg-blue-500 dark:hover:bg-cyan-400 hover:bg-opacity-20 dark:hover:bg-opacity-20 focus:bg-blue-500 dark:focus:bg-cyan-400 focus:bg-opacity-20 dark:focus:bg-opacity-20"
             :class="{ 'pointer-events-none': busy }"
           >
-            <span v-if="busy">Sending...</span>
-            <span v-if="!busy">Dispatch message</span>
+            <span v-if="busy">sending...</span>
+            <span v-if="!busy">dispatch message</span>
           </button>
         </form>
       </div>
@@ -90,10 +75,12 @@
 </template>
 
 <script>
-export default {
+import { defineComponent, reactive } from '@nuxtjs/composition-api';
+
+export default defineComponent({
   name: 'Contact',
-  data() {
-    return {
+  setup: (props, ctx) => {
+    const state = reactive({
       status: null,
       busy: false,
       form: {
@@ -102,48 +89,54 @@ export default {
         subject: null,
         message: null
       }
-    };
-  },
-  methods: {
-    encode(data) {
+    });
+
+    function encode(data) {
       const formData = new FormData();
+
+      state.form.name = state.form.email;
 
       for (const key of Object.keys(data)) {
         formData.append(key, data[key]);
       }
 
       return new URLSearchParams(formData).toString();
-    },
-
-    submitForm() {
-      this.status = null;
-      this.busy = true;
-
-      fetch('/', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: this.encode({
-          'form-name': 'contact',
-          ...this.form
-        })
-      })
-        .then(() => {
-          this.status = 'success';
-          this.busy = false;
-
-          this.form.name = null;
-          this.form.email = null;
-          this.form.subject = null;
-          this.form.message = null;
-        })
-        .catch((err) => {
-          this.status = 'error';
-          this.busy = false;
-
-          // eslint-disable-next-line no-console
-          console.error(err);
-        });
     }
+
+    async function submitForm() {
+      state.status = null;
+      state.busy = true;
+
+      try {
+        await fetch('/', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+          body: encode({
+            'form-name': 'contact',
+            ...state.form
+          })
+        });
+
+        state.status = 'success';
+        state.busy = false;
+
+        state.form.name = null;
+        state.form.email = null;
+        state.form.subject = null;
+        state.form.message = null;
+      } catch (err) {
+        state.status = 'error';
+        state.busy = false;
+
+        // eslint-disable-next-line no-console
+        console.error(err);
+      }
+    }
+
+    return {
+      submitForm,
+      ...state
+    };
   }
-};
+});
 </script>

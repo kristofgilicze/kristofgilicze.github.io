@@ -47,9 +47,15 @@
             <div
               class="lg:p-4 lg:bg-gray-100 lg:dark:bg-gray-800 lg:shadow-xl lg:rounded-lg"
             >
-              <nuxt-content :document="{ body: project.excerpt }" />
+              <nuxt-content
+                :document="
+                  project.excerpt
+                    ? { body: project.excerpt }
+                    : { body: project.body }
+                "
+              />
               <button
-                v-if="project.description"
+                v-if="project.excerpt"
                 class="font-bold text-white dark:text-cyan-400 bg-cyan-600 border-0 py-0.5 px-2 focus:outline-none hover:bg-blue-600 rounded"
                 @click="openModal(project)"
               >

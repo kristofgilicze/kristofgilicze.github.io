@@ -26,12 +26,20 @@
         >Toolbelt</nuxt-link
       >
     </li>
-    -->
+    
     <li>
       <nuxt-link
         to="/projects"
         class="item px-4 py-2 text-center block w-full transition transform hover:scale-110 hover:text-blue-500 dark:hover:text-cyan-400 focus:text-blue-500 dark:focus:text-cyan-400"
         >Projects</nuxt-link
+      >
+    </li>
+    -->
+    <li>
+      <nuxt-link
+        to="/curriculum-vitae"
+        class="item px-4 py-2 text-center block w-full transition transform hover:scale-110 hover:text-blue-500 dark:hover:text-cyan-400 focus:text-blue-500 dark:focus:text-cyan-400"
+        >CV</nuxt-link
       >
     </li>
     <li>

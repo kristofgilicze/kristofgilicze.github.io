@@ -11,8 +11,8 @@ technologies:
     link: 'https://element.eleme.io'
   - label: Vue
     link: 'https://vuejs.org'
-  - label: Kohana
-    link: 'https://kohanaframework.org'
+  - label: Symfony
+    link: 'https://symfony.com'
 github_link: null
 live_link: 'https://webuzletiterv.hu'
 ---

@@ -1,6 +1,6 @@
 <template>
   <div class="col-span-8">
-    <h2 class="text-xl pb-5">Projects that I have worked on</h2>
+    <h2 class="text-xl pb-3">Projects that I have worked on</h2>
     <!--
         <ul>
           <li
@@ -24,18 +24,32 @@
               target="_blank"
               class="font-bold"
             >
-              @ {{ project.company }}
+              {{ project.company }}
             </a>
           </h1>
           <span
             class="flex-auto ml-4 h-px w-32 bg-gray-300 dark:bg-gray-600"
           ></span>
         </div>
-        <div class="m-2 pb-5">
-          <p class="text-sm font-light mb-2">{{ project.duration }}</p>
-          <tags :items="project.tags" />
-          <p class="text-sm"><nuxt-content :document="project" /></p>
-          <p>{{ project.description }}</p>
+        <div class="m-2 pb-3">
+          <div class="flex justify-between">
+            <!--eslint-disable-next-line-->
+            <p
+              class="w-32 text-sm font-light mb-2"
+              v-html="project.duration"
+            ></p>
+            <tags class="items-start" :items="project.tags" />
+          </div>
+
+          <p class="text-sm">
+            <nuxt-content
+              :document="
+                project.excerpt
+                  ? { body: project.excerpt }
+                  : { body: project.body }
+              "
+            />
+          </p>
         </div>
       </li>
     </ul>

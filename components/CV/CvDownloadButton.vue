@@ -1,7 +1,7 @@
 <template>
   <div>
     <outlined-button :loading="loading" @click="generateCV">
-      Grab my CV
+      download as PDF
     </outlined-button>
     <client-only>
       <vue-html2pdf

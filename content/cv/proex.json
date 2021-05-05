@@ -1,0 +1,86 @@
+{
+    "client_side": [
+        {
+            "name": "Vue",
+            "link": null
+        },
+        {
+            "name": "Vue Composition API",
+            "link": null
+        },
+        {
+            "name": "TypeScript",
+            "link": null
+        }
+    ],
+    "protocols": [
+        {
+            "name": "WebSocket",
+            "link": null
+        },
+        {
+            "name": "REST",
+            "link": null
+        },
+        {
+            "name": "GraphQL",
+            "link": null
+        }
+    ],
+    "server_side_frameworks": [
+        {
+            "name": "Flask",
+            "link": null
+        },
+        {
+            "name": "Django",
+            "link": null
+        },
+        {
+            "name": "Symfony",
+            "link": null
+        }
+    ],
+    "db": [
+        {
+            "name": "TimeScaleDB",
+            "link": null
+        },
+        {
+            "name": "Redis",
+            "link": null
+        },
+        {
+            "name": "PostgreSQL",
+            "link": null
+        }
+    ],
+    "infrastructure": [
+        {
+            "name": "Docker",
+            "link": null
+        },
+        {
+            "name": "Dokku",
+            "link": null
+        }
+    ],
+    "tooling": [
+        {
+            "name": "Git",
+            "obtained_at": null,
+            "link": null
+        },
+        {
+            "name": "Github actions",
+            "obtained_at": null,
+            "link": null
+        },
+        {
+            "code": "C1",
+            "name": "English",
+            "obtained_at": null,
+            "link": null
+        }
+    ]
+}

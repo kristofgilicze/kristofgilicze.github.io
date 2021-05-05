@@ -1,6 +1,6 @@
 ---
-order: 0
-company: Sagax communications Ltd.
+order: 2
+company: "@ Sagax communications Ltd."
 company_website: https://sagaxcommunications.com
 role: junior software developer
 tags: 
@@ -16,6 +16,10 @@ tags:
       link: null
     - label: Polymer
       link: null
+    - label: TimeScaleDB
+      link: null
+    - label: PostgreSQL
+      link: null
     - label: C#
       link: null
     - label: .NET
@@ -25,9 +29,7 @@ contract:
     live: false
 duration: "2018 - 2020"
 tasks:
-    - I was an Active Mentor of the Google Africa Developer Scholarship (GADS) program in Nairobi.
-    - I helped run Meetups and mentor in the Android Track.
 ---
 FMeter is a automated quality control monitoring system certified by the _<strong>I</strong>nternational <strong>T</strong>elecommunication <strong>U</strong>nion_.
-
+<!--more-->
 Implemented using the Flask framework, with VueJS Single Page Application as a frontend interface.

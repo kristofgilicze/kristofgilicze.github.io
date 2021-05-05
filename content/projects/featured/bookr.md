@@ -1,6 +1,6 @@
 ---
 order: 1
-name: Bookr
+name: gBookr
 category: SaaS booking solution
 cover_image: /images/projects/todocode.png
 languages:
@@ -19,5 +19,6 @@ github_link: null
 live_link: null
 ---
 
-Todocode is a tool that can be used mainly by developers and it helps them
-manage their development tasks for maximum productivity.
+BL is implemented in Django, tenants managed with django-admin.
+Embedeble widgets are built with LitElement to be as light weight as possible.
+<!--more-->

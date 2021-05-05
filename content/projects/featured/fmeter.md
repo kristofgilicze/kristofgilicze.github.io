@@ -21,5 +21,7 @@ github_link: null
 live_link: null
 ---
 
-FMeter is a automated monitoring system implemented using the Flask framework,
-with VueJS Single Page Application as a frontend interface.
+FMeter is a automated quality control monitoring system certified by the _<strong>I</strong>nternational <strong>T</strong>elecommunication <strong>U</strong>nion_.
+
+Implemented using the Flask framework, with VueJS Single Page Application as a frontend interface.
+<!--more-->

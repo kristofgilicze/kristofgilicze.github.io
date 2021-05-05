@@ -40,15 +40,14 @@
             />
           </div>
           <div class="mb-4">
-            <label for="subject" class="block">Subject</label>
             <input
               id="subject"
-              v-model="form.subject"
+              value="kristofg.dev - contact-form"
               name="subject"
               type="text"
               required
               placeholder=""
-              class="p-2 block w-full border-b dark:bg-gray-800 border-gray-300 dark:border-gray-700 transition focus:border-blue-500 dark:focus:border-cyan-400 outline-none"
+              class="display-none"
             />
           </div>
           <div class="mb-4">

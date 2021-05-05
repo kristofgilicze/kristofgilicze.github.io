@@ -1,8 +1,8 @@
 ---
-order: 3
-company: "University of Szeged - SZIIV"
+order: 5
+company: "— University of Szeged - SZIIV"
 company_website: "https://u-szeged.hu/sztehirek/2017-aprilis/szte-sziiv-programjat?objectParentFolderId=50256"
-role: "Water rocket flight software developer"
+role: "water rocket flight software developer"
 tags: 
     - label: "C++"
       link: null

@@ -35,8 +35,10 @@ export default {
         href:
           'https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap'
       },
+      { rel: 'icon', href: 'data:;base64,iVBORw0KGgo=' },
       /* { rel: 'shortcut icon', href: '/favicon.ico' }, */
       { rel: 'shortcut icon', href: 'data:;base64,iVBORw0KGgo=' },
+      /*
       {
         rel: 'apple-touch-icon',
         sizes: '180x180',
@@ -59,9 +61,11 @@ export default {
         color: '#5bbad5',
         href: '/icons/safari-pinned-tab.svg'
       }
+      */
     ]
   },
 
+  /*
   pwa: {
     icon: false,
     manifest: {
@@ -71,8 +75,7 @@ export default {
       display: 'standalone',
       theme_color: '#406bc7',
       background_color: '#406bc7',
-      description:
-        'A highly resourceful Software Developer and well-rounded IT Professional.',
+      description: '',
       icons: [
         {
           src: '/icons/android-chrome-192x192.png',
@@ -87,7 +90,7 @@ export default {
       ]
     }
   },
-
+  */
   /*
   googleAnalytics: {
     id: 'UA-155390144-2',

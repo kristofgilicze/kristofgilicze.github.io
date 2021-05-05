@@ -1,18 +1,18 @@
 <template>
   <div>
-    <h2 class="text-xl pb-5">Professional skillset</h2>
-    <open-source-section />
+    <professional-skills-section />
+    <!--<open-source-section />-->
     <!--<certificates-section />-->
-
-    <h2 class="text-xl pt-5 pb-5">Education</h2>
+    <education-section />
   </div>
 </template>
 
 <script>
-import OpenSourceSection from './OpenSourceSection.vue';
+import EducationSection from './EducationSection.vue';
+import ProfessionalSkillsSection from './ProfessionalSkillsSection.vue';
 export default {
   name: 'RightCol',
-  components: { OpenSourceSection },
+  components: { EducationSection, ProfessionalSkillsSection },
   data() {
     return {
       certs: []

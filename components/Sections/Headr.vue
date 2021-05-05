@@ -32,7 +32,12 @@
             Get In Touch
           </nuxt-link>
           <span class="px-10">or</span>
-          <cv-download-button />
+          <nuxt-link
+            to="/curriculum-vitae"
+            class="px-6 py-3 font-sourcecode text-blue-500 dark:text-cyan-400 inline-block border-2 border-blue-500 dark:border-cyan-400 rounded-md transition hover:bg-blue-500 dark:hover:bg-cyan-400 hover:bg-opacity-20 dark:hover:bg-opacity-20 focus:bg-blue-500 dark:focus:bg-cyan-400 focus:bg-opacity-20 dark:focus:bg-opacity-20"
+          >
+            Grab my CV
+          </nuxt-link>
         </div>
       </main>
     </div>
@@ -40,11 +45,9 @@
 </template>
 
 <script>
-import CvDownloadButton from '@/components/CV/CvDownloadButton.vue';
-
 export default {
   name: 'Headr',
-  components: { CvDownloadButton },
+  components: {},
   async fetch() {
     this.about = await this.$content('about').fetch();
     this.bio = await this.$content('bio').fetch();
