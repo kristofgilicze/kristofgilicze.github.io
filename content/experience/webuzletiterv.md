@@ -17,7 +17,5 @@ contract:
     live: false
 duration: "2020 - 2021"
 tasks:
-    - I was an Active Mentor of the Google Africa Developer Scholarship (GADS) program in Nairobi.
-    - I helped run Meetups and mentor in the Android Track.
 ---
-Web application to guide self-employed, startups with their first bussniess plan.
+App to guide the self-employed and startups with their first bussniess plan.

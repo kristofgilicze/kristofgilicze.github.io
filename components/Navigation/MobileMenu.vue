@@ -15,9 +15,11 @@
       <li class="absolute top-4 right-8">
         <menu-toggle />
       </li>
+      <!--
       <li class="mx-auto mb-8">
         <theme-toggle />
       </li>
+      -->
       <li>
         <nuxt-link
           to="/"
@@ -27,11 +29,12 @@
       </li>
       <li>
         <nuxt-link
-          to="/experience"
+          to="/curriculum-vitae"
           class="mb-8 px-4 py-2 text-center block w-full transition hover:text-blue-500 dark:hover:text-cyan-400 focus:text-blue-500 dark:focus:text-cyan-400"
-          >Experience</nuxt-link
+          >CV</nuxt-link
         >
       </li>
+      <!--
       <li>
         <nuxt-link
           to="/skills"
@@ -46,6 +49,7 @@
           >Projects</nuxt-link
         >
       </li>
+      -->
       <li>
         <nuxt-link
           to="/get-in-touch"
@@ -60,11 +64,10 @@
 <script>
 import { mapGetters, mapActions } from 'vuex';
 import MenuToggle from '@/components/Controls/MenuToggle.vue';
-import ThemeToggle from '@/components/Controls/ThemeToggle.vue';
 
 export default {
   name: 'MobileNavbar',
-  components: { ThemeToggle, MenuToggle },
+  components: { MenuToggle },
   computed: mapGetters({
     menu: 'menu'
   }),

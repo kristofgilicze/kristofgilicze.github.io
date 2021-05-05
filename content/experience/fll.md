@@ -1,5 +1,5 @@
 ---
-order: 7
+order: 8
 company: "— FLL"
 company_website: https://junior.robocup.org/rcj-rescue-maze/
 role: softaware

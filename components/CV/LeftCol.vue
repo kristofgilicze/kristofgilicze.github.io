@@ -32,7 +32,7 @@
           ></span>
         </div>
         <div class="m-2 pb-3">
-          <div class="flex justify-between">
+          <div class="flex justify-between text-gray-600">
             <!--eslint-disable-next-line-->
             <p
               class="w-32 text-sm font-light mb-2"

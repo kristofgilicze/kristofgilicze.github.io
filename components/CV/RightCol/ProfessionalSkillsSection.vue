@@ -5,12 +5,12 @@
       <div v-for="(col, i) in cols" :key="(i + 1) * Math.random()">
         <p class="text-sm font-semibold text-green-600"># {{ col.label }}</p>
         <ul
-          class="border-l border-gray-300 mx-auto flex items-center justify-center pt-2 flex-wrap max-w-3xl gap-1"
+          class="border-l border-gray-300 mx-auto flex items-center justify-center pt-2 flex-wrap max-w-3xl gap-0.5"
         >
           <li
             v-for="(skill, index) in toolbelt[col.key]"
             :key="(index + 1) * Math.random()"
-            class="text-sm rounded px-1 mx-2 mb-2 font-sourcesans text-cyan-900"
+            class="text-sm rounded px-1 mx-1 mb-1 font-sourcesans text-cyan-900"
           >
             <a
               class="flex items-center"

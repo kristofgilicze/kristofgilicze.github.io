@@ -1,6 +1,6 @@
 ---
-order: 6
-company: "— RoboCup"
+order: 7
+company: "— RoboCup rescue maze challange"
 company_website: https://junior.robocup.org/rcj-rescue-maze/
 role: software and hardware
 tags: 
@@ -13,6 +13,6 @@ contract:
     live: false
 duration: 2 seasons<br>( 2016, 2017 )
 ---
-The RoboCup rescue-maze challange is to identify victims within a re-created disaster area with obstacles, uneven terrain.
+Search for "victims" within a re-created disaster area.
 <!--more-->
 We developed the firmware in Arduino flavoured C++, the realtime monitoring, debugging capability was built using LabView.

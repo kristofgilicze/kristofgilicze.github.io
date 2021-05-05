@@ -4,18 +4,6 @@ languages:
   icon: python.svg
   url: https://www.python.org
 
-- name: C / C++
-  icon: c-and-cpp.svg
-  url: https://isocpp.org/
-
-- name: C#
-  icon: c-and-cpp.svg
-  url: https://isocpp.org/
-
-- name: PHP
-  icon: c-and-cpp.svg
-  url: https://isocpp.org/
-
 - name: TypeScript
   icon: typescript.svg
   url: https://www.typescriptlang.org
@@ -23,6 +11,18 @@ languages:
 - name: JavaScript
   icon: javascript.svg
   url: https://developer.mozilla.org/en-US/docs/Learn/JavaScript
+
+- name: PHP
+  icon: c-and-cpp.svg
+  url: https://www.php.net
+
+- name: C#
+  icon: c-and-cpp.svg
+  url: https://docs.microsoft.com/en-us/dotnet/csharp/
+
+- name: C / C++
+  icon: c-and-cpp.svg
+  url: https://isocpp.org
 
 
 libsAndFrameworks:
@@ -95,6 +95,7 @@ transferProtocols:
 
 
 skills:
+- name: Linux
 - name: Git
   icon: git.svg
   url: https://git-scm.com
@@ -104,6 +105,9 @@ skills:
 - name: Azure functions
   icon: git.svg
   url: https://azure.microsoft.com/hu-hu/services/functions/
+- name: GAE
+  icon: git.svg
+  url: https://cloud.google.com/appengine
 - name: Github actions
   icon: git.svg
   url: https://github.com/features/actions

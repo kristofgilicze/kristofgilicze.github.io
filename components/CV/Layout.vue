@@ -1,5 +1,5 @@
 <template>
-  <div class="p-6">
+  <div class="p-4">
     <header-row />
     <contacts-row />
     <section class="grid grid-cols-12 gap-5">

@@ -6,7 +6,7 @@
     <logo />
     <nav-menu />
     <menu-toggle />
-    <theme-toggle class="hidden md:block" />
+    <!--<theme-toggle class="hidden md:block" />-->
   </nav>
 </template>
 
@@ -14,11 +14,10 @@
 import Logo from '@/components/Icons/Logo.vue';
 import MenuToggle from '@/components/Controls/MenuToggle.vue';
 import NavMenu from '@/components/Navigation/NavMenu.vue';
-import ThemeToggle from '../Controls/ThemeToggle.vue';
 
 export default {
   name: 'Navbar',
-  components: { Logo, NavMenu, MenuToggle, ThemeToggle },
+  components: { Logo, NavMenu, MenuToggle },
   mounted() {
     this.animateNav();
   },
