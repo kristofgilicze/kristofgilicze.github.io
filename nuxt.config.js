@@ -119,7 +119,13 @@ export default {
 
   content: {},
 
-  build: {},
+  build: {
+    babel: {
+      plugins: [
+        ['@babel/plugin-proposal-private-methods', { loose: true }]
+      ]
+    }
+  },
 
   generate: {
     /*
@@ -130,8 +136,7 @@ export default {
   },
 
   plugins: [
-    { src: '@/plugins/vue-html2pdf', mode: 'client' },
-    { src: '@babel/plugin-proposal-private-methods', loose: true }
+    { src: '@/plugins/vue-html2pdf', mode: 'client' }
   ],
 
   server: {
