@@ -109,7 +109,7 @@ export default {
   components: true,
 
   buildModules: [
-    '@nuxtjs/composition-api',
+    '@nuxtjs/composition-api/module',
     '@nuxtjs/eslint-module',
     '@nuxtjs/tailwindcss',
     '@aceforth/nuxt-netlify'
