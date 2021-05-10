@@ -16,35 +16,6 @@ import LeftCol from './LeftCol.vue';
 import RightCol from './RightCol/index.vue';
 export default {
   name: 'CvContent',
-  components: { HeaderRow, ContactsRow, LeftCol, RightCol },
-  data() {
-    return {
-      projects: null,
-      experinces: null,
-      certs: [],
-      about: {
-        name: '',
-        title: '',
-        secondary_title: '',
-        email: ''
-      }
-    };
-  },
-  created() {
-    this.load();
-  },
-  methods: {
-    async load() {
-      this.about = await this.$content('about').fetch();
-
-      this.projects = await this.$content('projects/featured')
-        .sortBy('order', 'asc')
-        .fetch();
-
-      this.experinces = await this.$content('experience')
-        .sortBy('order', 'asc')
-        .fetch();
-    }
-  }
+  components: { HeaderRow, ContactsRow, LeftCol, RightCol }
 };
 </script>
