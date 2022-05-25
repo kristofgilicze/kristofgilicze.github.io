@@ -112,7 +112,8 @@ export default {
     '@nuxtjs/composition-api/module',
     '@nuxtjs/eslint-module',
     '@nuxtjs/tailwindcss',
-    '@aceforth/nuxt-netlify'
+    '@aceforth/nuxt-netlify',
+    '@nuxtjs/device',
   ],
 
   modules: ['@nuxtjs/pwa', '@nuxt/content', '@nuxtjs/google-analytics'],

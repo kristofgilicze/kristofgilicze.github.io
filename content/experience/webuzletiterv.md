@@ -1,5 +1,5 @@
 ---
-order: 1
+order: 3
 company: "— webuzletiterv.hu"
 company_website: null
 role: fullstack developer
