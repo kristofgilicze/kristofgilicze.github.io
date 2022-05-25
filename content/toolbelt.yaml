@@ -46,6 +46,9 @@ frontend:
   - name: Vite
     url: https://vitejs.dev
 
+  - name: Cypress
+    url: https://cypress.io
+
   - name: Polymer
     url: https://www.djangoproject.com
 
