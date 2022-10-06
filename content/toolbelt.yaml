@@ -28,7 +28,7 @@ libsAndFrameworks:
     icon: django.svg
     url: https://www.djangoproject.com
 
-  - name: Flask
+  - name: Starlette
     icon: flask.svg
     url: https://isocpp.org/
 
@@ -68,15 +68,22 @@ persistance:
     url: https://sqlite.org
 
 transferProtocols:
+  
   - name: REST
     icon: rest.svg
     url: https://restfulapi.net
+  
   - name: GraphQL
     icon: graphql.svg
     url: https://graphql.org
+  
   - name: Socket.IO
     icon: socketio.svg
     url: https://socket.io
+  
+  - name: ZeroMQ
+    icon: flask.svg
+    url: https://zeromq.org
 
 skills:
   - name: Linux
@@ -88,5 +95,5 @@ skills:
     url: https://aws.com
   - name: Bitbucket
     url: https://www.bitbucket.org/
-  - name: Github actions
+  - name: Github actions (CI/CD)
     url: https://github.com/features/actions
